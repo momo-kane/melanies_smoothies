@@ -1,5 +1,4 @@
 # Import python packages
-import requests
 import streamlit as st
 from snowflake.snowpark.functions import col
 
@@ -24,6 +23,8 @@ ingredients_list = st.multiselect(
     ,my_dataframe
     ,max_selections=5
     )
+
+import requests
 
 if ingredients_list:
     ingredients_string = ''
